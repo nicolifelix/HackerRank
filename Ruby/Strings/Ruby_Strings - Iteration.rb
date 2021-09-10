@@ -29,7 +29,7 @@
 
 # Desafio: Escreva o método count_multibyte_char que recebe uma string como entrada e retorna o número de caracteres multibyte (tamanho do byte> 1) nele.
 
-# Por exemplo:
+#Por exemplo:
 
 >  count_multibyte_char ( '¥ 1000 ' ) 
 1

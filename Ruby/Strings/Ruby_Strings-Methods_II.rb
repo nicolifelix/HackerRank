@@ -21,7 +21,7 @@
 
 # Um método auxiliar strike, dado uma string, anexa tags HTML tachadas ao redor dela. A tag HTML tachada é <strike></strike>.
 
-# Por exemplo:
+#Por exemplo:
 
 > strike("Meow!") 
 => "<strike>Meow!</strike>"
@@ -42,3 +42,4 @@ end
 def strike(str)
     "<strike>" + "#{str}" + "</strike>"
 end
+

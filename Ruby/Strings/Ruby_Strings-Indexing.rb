@@ -58,7 +58,7 @@
 Hello 123
 
 
-# Your code here
+#Your code here
 def serial_average(s)
     ns = s[0,3] #extrair partes específicas da string
     n1 = s[4,5].to_f #extrair partes específicas da string e transformar em numero => 10.0

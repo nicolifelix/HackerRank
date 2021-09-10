@@ -2,7 +2,7 @@
 
 # Por exemplo, uma sum(array)função pode desejar adicionar todos os elementos passados ​​como matriz e retornar o resultado.
 
-# Uma abstração generalizada da mesma funcionalidade é fornecida em Ruby em nome de reduce( injecté um alias). Ou seja, esses métodos iteram em uma coleção e acumulam o valor de uma operação em elementos em um valor base usando um operador e retornam esse valor base no final.
+# Uma abstração generalizada da mesma funcionalidade é fornecida em Ruby em nome de reduce( inject é um alias). Ou seja, esses métodos iteram em uma coleção e acumulam o valor de uma operação em elementos em um valor base usando um operador e retornam esse valor base no final.
 
 # Vamos dar um exemplo para melhor compreensão.
 
@@ -30,13 +30,15 @@ return value = 2*3
 
 ..
 
-
 # Como você pode notar, o valor base é atualizado continuamente conforme a expressão percorre o elemento do contêiner, retornando assim o valor final do valor base como resultado.
 
 # Outros exemplos,
 
->>> (5..10).reduce(1, :*)   # :* is shorthand for multiplication
+>>> (5..10).reduce(1, :*)   # :* é uma forma abreviada para multiplicação
 => 151200
 
+# Considere uma sequência aritmético-geométrica onde o  termo da sequência tn = n2 + 1,n >= 0exit é denotado por . Neste desafio, sua tarefa é completar o sum método que pega um número inteiro n e retorna a soma aos n termos da série.
 
-# Considere uma sequência aritmético-geométrica onde o  termo da sequência tn = n2 + 1,n >= 0exit é denotado por . Neste desafio, sua tarefa é completar o summétodo que pega um número inteiro ne retorna a soma aos n termos da série.
+def sum_terms(n)
+    (1..n).reduce(0) {|sum, val| sum += (val * val + 1)}
+end
