@@ -39,4 +39,4 @@ return value = 2*3
 => 151200
 
 
-# Considere uma sequência aritmético-geométrica onde o  termo da sequência tn = n2 + 1,n >= 0 é denotado por . Neste desafio, sua tarefa é completar o summétodo que pega um número inteiro ne retorna a soma aos n termos da série .
+# Considere uma sequência aritmético-geométrica onde o  termo da sequência tn = n2 + 1,n >= 0exit é denotado por . Neste desafio, sua tarefa é completar o summétodo que pega um número inteiro ne retorna a soma aos n termos da série.
